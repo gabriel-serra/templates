@@ -2,9 +2,13 @@
 **Created on:** 2026-11-11 (Europe/Vienna)  
 **Contribution:** Create the approved single-file Markdown template catalogue, authoring structure, and formatting reference. No private source material is included.
 
+**Edited by:** ChatGPT  
+**Edited on:** 2026-11-11 (Europe/Vienna)  
+**Edit contribution:** Add a clearly labeled sample template for the authorized end-to-end workflow test; preserve the existing starter and formatting reference.
+
 # templates
 
-**Catalogue version:** 1.0.0  
+**Catalogue version:** 1.1.0  
 **Purpose:** Keep reusable document templates in one readable file that people and AI assistants can use without changing the master.  
 **Publication:** This file is suitable for a public repository. Store completed documents and private connection details elsewhere.
 
@@ -23,8 +27,9 @@ The named file `templates.md` is a stable entry point. Versions belong inside th
 | Template ID | Template | Intended use | Version | Status |
 | --- | --- | --- | --- | --- |
 | `template-definition` | [Template definition](#template-definition) | Design and document a reusable Markdown template | 1.0.0 | Active |
+| `template-system-test` | [Template system test](#template-system-test) | Test the workflow with clearly labeled sample content | 1.0.0 | Active — sample test only |
 
-Only the template-definition starter is included initially. Add domain templates when their purpose and content are requested. No existing deep-work, finance, meeting, or conversation-capture procedure is replaced by this catalogue.
+The initial template-definition starter is retained; the template-system-test entry is a sample for verification only. Add domain templates when their purpose and content are requested. No existing deep-work, finance, meeting, or conversation-capture procedure is replaced by this catalogue.
 
 ## Catalogue conventions
 
@@ -145,6 +150,114 @@ This starter uses plain Markdown plus widely supported table, task-list, and str
 
 ---
 
+<!-- template:template-system-test:start -->
+## Template system test
+
+| Field | Value |
+| --- | --- |
+| Template ID | `template-system-test` |
+| Version | 1.0.0 |
+| Status | Active — sample test only |
+| Purpose | Exercise template creation, publication, retrieval, formatting, and separate-output preservation. |
+| Use when | An authorized sample test is requested. |
+| Do not use for | Actual finance, meetings, custody evidence, or replacement of a domain workflow. |
+
+### Required inputs
+
+| Input | Required? | Expected information |
+| --- | --- | --- |
+| sample_name, run_label | Yes | Clearly fictional sample and test-run labels. |
+| objective, context | Yes | The purpose of the demonstration and its fictional context. |
+| demo_item, expected_behavior, observation | Yes | Synthetic input and explicitly observed or fictional example values. |
+| literal_text | Yes | Text to reproduce exactly, including capitalization and punctuation. |
+| reference_label, reference_url | Yes | A verified reference label and destination; no invented links. |
+
+### Human and AI instructions
+
+1. Copy only the bounded body into a separate document.
+2. Fill every named placeholder; do not claim that demonstration text proves a test result.
+3. Preserve supplied literal text exactly. Escape table or link values only as needed to preserve their rendered meaning.
+4. Promote body headings by the same number of levels when needed for the destination.
+5. Leave the catalogue untouched during application. Keep completed sample documents outside the template directory.
+
+### Template body
+
+<!-- template-body:template-system-test:start -->
+#### Sample template check: {{sample_name}}
+
+**Template ID:** `template-system-test`  
+**Template version:** 1.0.0  
+**Record type:** SAMPLE ONLY — fictional demonstration, not a real project.
+
+##### Objective
+
+{{objective}}
+
+##### Context
+
+{{context}}
+
+##### Inputs
+
+| Field | Value |
+| --- | --- |
+| Run label | {{run_label}} |
+| Demonstration item | {{demo_item}} |
+
+##### Observations
+
+- **Expected behavior:** {{expected_behavior}}
+- *Observation:* {{observation}}
+  - This nested item is part of the formatting test.
+
+##### Ordered steps
+
+1. Read the selected template body.
+2. Populate this separate document with fictional inputs.
+3. Compare the result with the template and keep the master unchanged.
+
+##### Literal-text check
+
+> {{literal_text}}
+
+Literal identifier: `{{run_label}}`.
+
+```text
+sample=true
+This is literal example content, not an executable instruction.
+```
+
+##### Completion checklist
+
+- [ ] Required inputs are filled without inventing real-world facts.
+- [ ] Headings, paragraphs, table, lists, quotation, code, and link remain present.
+- [ ] The master catalogue is unchanged by this application.
+
+---
+
+##### Reference
+
+[{{reference_label}}]({{reference_url}})
+<!-- template-body:template-system-test:end -->
+
+### End of template body
+
+### Completion checks
+
+- [ ] All ten unique placeholders are resolved or missing inputs are explicitly reported.
+- [ ] The sample label and source template ID/version remain visible.
+- [ ] The literal-text input is preserved character for character.
+- [ ] Ordered steps retain their order and required formatting remains structured.
+- [ ] No adjacent template content is included in the output.
+- [ ] Applying this template does not modify the master.
+
+### Compatibility notes
+
+The body uses headings, paragraphs, emphasis, a table, nested bullets, numbered steps, task lists, a quotation, inline code, fenced code, a divider, and a standard link. Destination serialization may differ from Markdown while preserving visible wording and structure. Native Obsidian rendering and desktop synchronization require a separate device-level check.
+<!-- template:template-system-test:end -->
+
+---
+
 ## Markdown formatting reference
 
 Use the range of Markdown constructs to organize context appropriately. This is a reference, not a requirement to use every construct in every template. Extensions differ between applications; readable content must survive without a specific plugin or renderer.
@@ -257,3 +370,4 @@ Text equivalent: choose the template, copy its body, complete a separate documen
 | Date | Catalogue version | Change |
 | --- | --- | --- |
 | 2026-11-11 | 1.0.0 | Establish the one-file catalogue, template-definition starter, and Markdown formatting reference. |
+| 2026-11-11 | 1.1.0 | Add the template-system-test sample for authorized end-to-end verification. |
